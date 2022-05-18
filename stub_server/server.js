@@ -3,6 +3,7 @@ const path = require('path')
 const server = jsonServer.create();
 const router = jsonServer.router(path.join(__dirname, 'db.json'));
 const middlewares = jsonServer.defaults();
+const port = process.env.PORT || 8080
 
 server.use(middlewares);
 
@@ -17,4 +18,4 @@ server.use((req, res, next) => {
 
 server.use(router);
 
-server.listen(8080, () => console.log("JSON Server is running at http://localhost:8080"));
+server.listen(port, () => console.log('JSON Server is running...'));
