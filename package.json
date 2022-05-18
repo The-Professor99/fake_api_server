@@ -4,7 +4,8 @@
   "description": "fake api server for angular test ",
   "main": "server.js",
   "scripts": {
-    "start": "node stub_server/generate-fake-data.js && node stub_server/server.js"
+    "start": "node stub_server/server.js",
+    "generate": "node stub_server/generate-fake-data.js"
   },
   "author": "Ihechi Festus",
   "license": "ISC",
