@@ -1,0 +1,17 @@
+{
+  "name": "fake-server-angular-test",
+  "version": "1.0.0",
+  "description": "fake api server for angular test ",
+  "main": "server.js",
+  "scripts": {
+    "start": "node stub_server/generate-fake-data.js && node stub_server/server.js"
+  },
+  "author": "Ihechi Festus",
+  "license": "ISC",
+  "dependencies": {
+    "json-server": "^0.17.0"
+  },
+  "devDependencies": {
+    "@faker-js/faker": "^6.3.1"
+  }
+}
